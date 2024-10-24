@@ -1,0 +1,257 @@
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 158
+Server version: 8.3.0 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> CREATE DATABASE RUHANDE;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| huye2              |
+| information_schema |
+| mysql              |
+| oggg               |
+| ok                 |
+| performance_schema |
+| ruhande            |
+| schoolghh          |
+| student            |
++--------------------+
+9 rows in set (0.00 sec)
+
+mysql> use ruhande;
+Database changed
+
+mysql> create table Ngoma (id int(16),Fname varchar(30),lname varchar(30),gender varchar(30),province varchar(30),disctrict varchar(30),sector varchar(30),cell varchar(30),telephone varchar(30),email varchar(30));
+Query OK, 0 rows affected, 1 warning (0.02 sec)
+
+mysql> insert into Ngoma value('1200080031219059','Kamana','Egide','M','South','Kamonyi','Muremera','Busanza','0781331477','kamanaegide@gmail.com'),('1200070031219059','Lea','Alice','F','South','Nyanza','Busasamana','kaynza','07914531477','leaalice@gmail.com');
+Query OK, 2 rows affected, 2 warnings (0.00 sec)
+Records: 2  Duplicates: 0  Warnings: 2
+
+mysql> select* from Ngoma;
++------------+--------+-------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+| id         | Fname  | lname | gender | province | disctrict | sector     | cell    | telephone   | email                 |
++------------+--------+-------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+| 2147483647 | Kamana | Egide | M      | South    | Kamonyi   | Muremera   | Busanza | 0781331477  | kamanaegide@gmail.com |
+| 2147483647 | Lea    | Alice | F      | South    | Nyanza    | Busasamana | kaynza  | 07914531477 | leaalice@gmail.com    |
++------------+--------+-------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+2 rows in set (0.00 sec)
+
+mysql> insert into Ngoma value('1200080031219','mvakure','karegeya','M','Eastern','nyagatare','Mura','Buzama','07813377','kamanaide@gmail.com'),('120001219059','Lea','jose','F','South','ruhango','byimana','ruhango','07014531477','markce@gmail.com');
+Query OK, 2 rows affected, 2 warnings (0.00 sec)
+Records: 2  Duplicates: 0  Warnings: 2
+
+mysql> select* from Ngoma;
++------------+---------+----------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+| id         | Fname   | lname    | gender | province | disctrict | sector     | cell    | telephone   | email                 |
++------------+---------+----------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+| 2147483647 | Kamana  | Egide    | M      | South    | Kamonyi   | Muremera   | Busanza | 0781331477  | kamanaegide@gmail.com |
+| 2147483647 | Lea     | Alice    | F      | South    | Nyanza    | Busasamana | kaynza  | 07914531477 | leaalice@gmail.com    |
+| 2147483647 | mvakure | karegeya | M      | Eastern  | nyagatare | Mura       | Buzama  | 07813377    | kamanaide@gmail.com   |
+| 2147483647 | Lea     | jose     | F      | South    | ruhango   | byimana    | ruhango | 07014531477 | markce@gmail.com      |
++------------+---------+----------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+4 rows in set (0.00 sec)
+
+mysql> insert into Ngoma value('1201219059','habakurama','Ndamage','M','eastern','kayonza','Kidaturwa','Busa','07001331477','ndamageide@gmail.com'),('1200090031219059','sava','hinde','F','South','HUye','Ntongwe','kebero','07911477','kangeyoce@gmail.com');
+Query OK, 2 rows affected, 1 warning (0.00 sec)
+Records: 2  Duplicates: 0  Warnings: 1
+
+mysql> select *from Ngoma;
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+| id         | Fname      | lname    | gender | province | disctrict | sector     | cell    | telephone   | email                 |
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+| 2147483647 | Kamana     | Egide    | M      | South    | Kamonyi   | Muremera   | Busanza | 0781331477  | kamanaegide@gmail.com |
+| 2147483647 | Lea        | Alice    | F      | South    | Nyanza    | Busasamana | kaynza  | 07914531477 | leaalice@gmail.com    |
+| 2147483647 | mvakure    | karegeya | M      | Eastern  | nyagatare | Mura       | Buzama  | 07813377    | kamanaide@gmail.com   |
+| 2147483647 | Lea        | jose     | F      | South    | ruhango   | byimana    | ruhango | 07014531477 | markce@gmail.com      |
+| 1201219059 | habakurama | Ndamage  | M      | eastern  | kayonza   | Kidaturwa  | Busa    | 07001331477 | ndamageide@gmail.com  |
+| 2147483647 | sava       | hinde    | F      | South    | HUye      | Ntongwe    | kebero  | 07911477    | kangeyoce@gmail.com   |
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+6 rows in set (0.00 sec)
+
+mysql> select* from Ngoma;
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+| id         | Fname      | lname    | gender | province | disctrict | sector     | cell    | telephone   | email                 |
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+| 2147483647 | Kamana     | Egide    | M      | South    | Kamonyi   | Muremera   | Busanza | 0781331477  | kamanaegide@gmail.com |
+| 2147483647 | Lea        | Alice    | F      | South    | Nyanza    | Busasamana | kaynza  | 07914531477 | leaalice@gmail.com    |
+| 2147483647 | mvakure    | karegeya | M      | Eastern  | nyagatare | Mura       | Buzama  | 07813377    | kamanaide@gmail.com   |
+| 2147483647 | Lea        | jose     | F      | South    | ruhango   | byimana    | ruhango | 07014531477 | markce@gmail.com      |
+| 1201219059 | habakurama | Ndamage  | M      | eastern  | kayonza   | Kidaturwa  | Busa    | 07001331477 | ndamageide@gmail.com  |
+| 2147483647 | sava       | hinde    | F      | South    | HUye      | Ntongwe    | kebero  | 07911477    | kangeyoce@gmail.com   |
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+6 rows in set (0.00 sec)
+
+mysql>  insert into Ngoma value('111101219059','habakuki','Ndanda','M','eastern','kayonza','Kidata','Busaza','071331477','kidamageide@gmail.com'),('13000000059','vava','amagi','F','north','Ngom','Ntongwe','kayenzi','079117007','amagie@gmail.com');
+Query OK, 2 rows affected, 2 warnings (0.00 sec)
+Records: 2  Duplicates: 0  Warnings: 2
+
+mysql> select* from Ngoma;
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+| id         | Fname      | lname    | gender | province | disctrict | sector     | cell    | telephone   | email                 |
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+| 2147483647 | Kamana     | Egide    | M      | South    | Kamonyi   | Muremera   | Busanza | 0781331477  | kamanaegide@gmail.com |
+| 2147483647 | Lea        | Alice    | F      | South    | Nyanza    | Busasamana | kaynza  | 07914531477 | leaalice@gmail.com    |
+| 2147483647 | mvakure    | karegeya | M      | Eastern  | nyagatare | Mura       | Buzama  | 07813377    | kamanaide@gmail.com   |
+| 2147483647 | Lea        | jose     | F      | South    | ruhango   | byimana    | ruhango | 07014531477 | markce@gmail.com      |
+| 1201219059 | habakurama | Ndamage  | M      | eastern  | kayonza   | Kidaturwa  | Busa    | 07001331477 | ndamageide@gmail.com  |
+| 2147483647 | sava       | hinde    | F      | South    | HUye      | Ntongwe    | kebero  | 07911477    | kangeyoce@gmail.com   |
+| 2147483647 | habakuki   | Ndanda   | M      | eastern  | kayonza   | Kidata     | Busaza  | 071331477   | kidamageide@gmail.com |
+| 2147483647 | vava       | amagi    | F      | north    | Ngom      | Ntongwe    | kayenzi | 079117007   | amagie@gmail.com      |
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+8 rows in set (0.00 sec)
+
+mysql> insert into Ngoma value('11112301219059','Noa','Samueli','M','eastern','kayonza','Kidendezi','Buganza','071331499','samuelide@gmail.com'),('13000000056','valntia','amgi','M','south','Ruhango','kinazi','kinazi','079117009','fablicee@gmail.com');
+Query OK, 2 rows affected, 2 warnings (0.01 sec)
+Records: 2  Duplicates: 0  Warnings: 2
+
+mysql> select* from Ngoma;
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+| id         | Fname      | lname    | gender | province | disctrict | sector     | cell    | telephone   | email                 |
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+| 2147483647 | Kamana     | Egide    | M      | South    | Kamonyi   | Muremera   | Busanza | 0781331477  | kamanaegide@gmail.com |
+| 2147483647 | Lea        | Alice    | F      | South    | Nyanza    | Busasamana | kaynza  | 07914531477 | leaalice@gmail.com    |
+| 2147483647 | mvakure    | karegeya | M      | Eastern  | nyagatare | Mura       | Buzama  | 07813377    | kamanaide@gmail.com   |
+| 2147483647 | Lea        | jose     | F      | South    | ruhango   | byimana    | ruhango | 07014531477 | markce@gmail.com      |
+| 1201219059 | habakurama | Ndamage  | M      | eastern  | kayonza   | Kidaturwa  | Busa    | 07001331477 | ndamageide@gmail.com  |
+| 2147483647 | sava       | hinde    | F      | South    | HUye      | Ntongwe    | kebero  | 07911477    | kangeyoce@gmail.com   |
+| 2147483647 | habakuki   | Ndanda   | M      | eastern  | kayonza   | Kidata     | Busaza  | 071331477   | kidamageide@gmail.com |
+| 2147483647 | vava       | amagi    | F      | north    | Ngom      | Ntongwe    | kayenzi | 079117007   | amagie@gmail.com      |
+| 2147483647 | Noa        | Samueli  | M      | eastern  | kayonza   | Kidendezi  | Buganza | 071331499   | samuelide@gmail.com   |
+| 2147483647 | valntia    | amgi     | M      | south    | Ruhango   | kinazi     | kinazi  | 079117009   | fablicee@gmail.com    |
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+10 rows in set (0.00 sec)
+
+mysql> select id,Fname,lname,gender,province from Ngoma;
++------------+------------+----------+--------+----------+
+| id         | Fname      | lname    | gender | province |
++------------+------------+----------+--------+----------+
+| 2147483647 | Kamana     | Egide    | M      | South    |
+| 2147483647 | Lea        | Alice    | F      | South    |
+| 2147483647 | mvakure    | karegeya | M      | Eastern  |
+| 2147483647 | Lea        | jose     | F      | South    |
+| 1201219059 | habakurama | Ndamage  | M      | eastern  |
+| 2147483647 | sava       | hinde    | F      | South    |
+| 2147483647 | habakuki   | Ndanda   | M      | eastern  |
+| 2147483647 | vava       | amagi    | F      | north    |
+| 2147483647 | Noa        | Samueli  | M      | eastern  |
+| 2147483647 | valntia    | amgi     | M      | south    |
++------------+------------+----------+--------+----------+
+10 rows in set (0.00 sec)
+
+mysql> select * from Ngom where Fname='kamana' or lname='alice';
+ERROR 1146 (42S02): Table 'ruhande.ngom' doesn't exist
+mysql> select * from Ngoma where Fname='kamana' or lname='alice';
++------------+--------+-------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+| id         | Fname  | lname | gender | province | disctrict | sector     | cell    | telephone   | email                 |
++------------+--------+-------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+| 2147483647 | Kamana | Egide | M      | South    | Kamonyi   | Muremera   | Busanza | 0781331477  | kamanaegide@gmail.com |
+| 2147483647 | Lea    | Alice | F      | South    | Nyanza    | Busasamana | kaynza  | 07914531477 | leaalice@gmail.com    |
++------------+--------+-------+--------+----------+-----------+------------+---------+-------------+-----------------------+
+2 rows in set (0.00 sec)
+
+mysql> alter table Ngoma drop column email;
+Query OK, 10 rows affected (0.05 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> select *from Ngoma;
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+
+| id         | Fname      | lname    | gender | province | disctrict | sector     | cell    | telephone   |
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+
+| 2147483647 | Kamana     | Egide    | M      | South    | Kamonyi   | Muremera   | Busanza | 0781331477  |
+| 2147483647 | Lea        | Alice    | F      | South    | Nyanza    | Busasamana | kaynza  | 07914531477 |
+| 2147483647 | mvakure    | karegeya | M      | Eastern  | nyagatare | Mura       | Buzama  | 07813377    |
+| 2147483647 | Lea        | jose     | F      | South    | ruhango   | byimana    | ruhango | 07014531477 |
+| 1201219059 | habakurama | Ndamage  | M      | eastern  | kayonza   | Kidaturwa  | Busa    | 07001331477 |
+| 2147483647 | sava       | hinde    | F      | South    | HUye      | Ntongwe    | kebero  | 07911477    |
+| 2147483647 | habakuki   | Ndanda   | M      | eastern  | kayonza   | Kidata     | Busaza  | 071331477   |
+| 2147483647 | vava       | amagi    | F      | north    | Ngom      | Ntongwe    | kayenzi | 079117007   |
+| 2147483647 | Noa        | Samueli  | M      | eastern  | kayonza   | Kidendezi  | Buganza | 071331499   |
+| 2147483647 | valntia    | amgi     | M      | south    | Ruhango   | kinazi     | kinazi  | 079117009   |
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+
+10 rows in set (0.00 sec)
+
+mysql> alter table Ngoma add column number int(9);
+Query OK, 10 rows affected, 1 warning (0.05 sec)
+Records: 10  Duplicates: 0  Warnings: 1
+
+mysql> select* from Ngoma;
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+--------+
+| id         | Fname      | lname    | gender | province | disctrict | sector     | cell    | telephone   | number |
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+--------+
+| 2147483647 | Kamana     | Egide    | M      | South    | Kamonyi   | Muremera   | Busanza | 0781331477  |   NULL |
+| 2147483647 | Lea        | Alice    | F      | South    | Nyanza    | Busasamana | kaynza  | 07914531477 |   NULL |
+| 2147483647 | mvakure    | karegeya | M      | Eastern  | nyagatare | Mura       | Buzama  | 07813377    |   NULL |
+| 2147483647 | Lea        | jose     | F      | South    | ruhango   | byimana    | ruhango | 07014531477 |   NULL |
+| 1201219059 | habakurama | Ndamage  | M      | eastern  | kayonza   | Kidaturwa  | Busa    | 07001331477 |   NULL |
+| 2147483647 | sava       | hinde    | F      | South    | HUye      | Ntongwe    | kebero  | 07911477    |   NULL |
+| 2147483647 | habakuki   | Ndanda   | M      | eastern  | kayonza   | Kidata     | Busaza  | 071331477   |   NULL |
+| 2147483647 | vava       | amagi    | F      | north    | Ngom      | Ntongwe    | kayenzi | 079117007   |   NULL |
+| 2147483647 | Noa        | Samueli  | M      | eastern  | kayonza   | Kidendezi  | Buganza | 071331499   |   NULL |
+| 2147483647 | valntia    | amgi     | M      | south    | Ruhango   | kinazi     | kinazi  | 079117009   |   NULL |
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+--------+
+10 rows in set (0.00 sec)
+
+mysql> update ngoma set number ='9' where gender='F';
+Query OK, 4 rows affected (0.00 sec)
+Rows matched: 4  Changed: 4  Warnings: 0
+
+mysql> SELECT * FROM NGOMA;
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+--------+
+| id         | Fname      | lname    | gender | province | disctrict | sector     | cell    | telephone   | number |
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+--------+
+| 2147483647 | Kamana     | Egide    | M      | South    | Kamonyi   | Muremera   | Busanza | 0781331477  |   NULL |
+| 2147483647 | Lea        | Alice    | F      | South    | Nyanza    | Busasamana | kaynza  | 07914531477 |      9 |
+| 2147483647 | mvakure    | karegeya | M      | Eastern  | nyagatare | Mura       | Buzama  | 07813377    |   NULL |
+| 2147483647 | Lea        | jose     | F      | South    | ruhango   | byimana    | ruhango | 07014531477 |      9 |
+| 1201219059 | habakurama | Ndamage  | M      | eastern  | kayonza   | Kidaturwa  | Busa    | 07001331477 |   NULL |
+| 2147483647 | sava       | hinde    | F      | South    | HUye      | Ntongwe    | kebero  | 07911477    |      9 |
+| 2147483647 | habakuki   | Ndanda   | M      | eastern  | kayonza   | Kidata     | Busaza  | 071331477   |   NULL |
+| 2147483647 | vava       | amagi    | F      | north    | Ngom      | Ntongwe    | kayenzi | 079117007   |      9 |
+| 2147483647 | Noa        | Samueli  | M      | eastern  | kayonza   | Kidendezi  | Buganza | 071331499   |   NULL |
+| 2147483647 | valntia    | amgi     | M      | south    | Ruhango   | kinazi     | kinazi  | 079117009   |   NULL |
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+--------+
+10 rows in set (0.00 sec)
+
+mysql> update ngoma set number ='10' where gender='F';
+Query OK, 4 rows affected (0.00 sec)
+Rows matched: 4  Changed: 4  Warnings: 0
+
+mysql> select* from Ngoma;
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+--------+
+| id         | Fname      | lname    | gender | province | disctrict | sector     | cell    | telephone   | number |
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+--------+
+| 2147483647 | Kamana     | Egide    | M      | South    | Kamonyi   | Muremera   | Busanza | 0781331477  |   NULL |
+| 2147483647 | Lea        | Alice    | F      | South    | Nyanza    | Busasamana | kaynza  | 07914531477 |     10 |
+| 2147483647 | mvakure    | karegeya | M      | Eastern  | nyagatare | Mura       | Buzama  | 07813377    |   NULL |
+| 2147483647 | Lea        | jose     | F      | South    | ruhango   | byimana    | ruhango | 07014531477 |     10 |
+| 1201219059 | habakurama | Ndamage  | M      | eastern  | kayonza   | Kidaturwa  | Busa    | 07001331477 |   NULL |
+| 2147483647 | sava       | hinde    | F      | South    | HUye      | Ntongwe    | kebero  | 07911477    |     10 |
+| 2147483647 | habakuki   | Ndanda   | M      | eastern  | kayonza   | Kidata     | Busaza  | 071331477   |   NULL |
+| 2147483647 | vava       | amagi    | F      | north    | Ngom      | Ntongwe    | kayenzi | 079117007   |     10 |
+| 2147483647 | Noa        | Samueli  | M      | eastern  | kayonza   | Kidendezi  | Buganza | 071331499   |   NULL |
+| 2147483647 | valntia    | amgi     | M      | south    | Ruhango   | kinazi     | kinazi  | 079117009   |   NULL |
++------------+------------+----------+--------+----------+-----------+------------+---------+-------------+--------+
+10 rows in set (0.00 sec)
+
+mysql> select* from ngoma where fname='kamana' and province='south';
++------------+--------+-------+--------+----------+-----------+----------+---------+------------+--------+
+| id         | Fname  | lname | gender | province | disctrict | sector   | cell    | telephone  | number |
++------------+--------+-------+--------+----------+-----------+----------+---------+------------+--------+
+| 2147483647 | Kamana | Egide | M      | South    | Kamonyi   | Muremera | Busanza | 0781331477 |   NULL |
++------------+--------+-------+--------+----------+-----------+----------+---------+------------+--------+
+1 row in set (0.00 sec)
+
+mysql>
